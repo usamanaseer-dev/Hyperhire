@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex justify-center items-center h-screen bg-gradient-to-r from-purple-900 to-blue-900">
+    <section className="relative flex justify-center items-center h-screen bg-gradient-to-r from-purple-950 via-purple-900 to-blue-950">
       {/* Background text */}
       <div className="text-center text-white relative">
         <h1 className="text-5xl md:text-6xl font-bold inline-block">

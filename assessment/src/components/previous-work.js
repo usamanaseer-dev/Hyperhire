@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const PreviousWork = () => {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black text-white py-8">
       {/* Previous Works Section */}
       <div className="text-center mb-8">
         <p className="text-orange-500 font-bold text-lg">•</p>

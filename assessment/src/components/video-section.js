@@ -2,47 +2,43 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black text-white py-6 pt-16">
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-red-500 font-bold text-lg mb-4">영상 제작소</p>
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] font-bold text-lg mb-4">
+          영상 제작소
+        </p>
         <h2 className="text-4xl lg:text-5xl font-bold">
-          당장 내일 <span className="text-orange-500">‘고품질 맞춤 영상’</span>
+          당장 내일{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
+            ‘고품질 맞춤 영상’
+          </span>
           을 받아보세요.
         </h2>
       </div>
 
       {/* Icons Section */}
-      <div className="flex justify-center space-x-4 lg:space-x-8 mb-12">
-        {/* FAST */}
-        <div className="flex flex-col items-center justify-center border border-gray-600 rounded-full w-32 h-32 lg:w-40 lg:h-40">
-          <p className="text-orange-500 font-bold text-lg lg:text-2xl">FAST</p>
-          <p className="text-gray-400 text-sm lg:text-base">X2</p>
-        </div>
-
-        {/* QUALITY */}
-        <div className="flex flex-col items-center justify-center border border-gray-600 rounded-full w-32 h-32 lg:w-40 lg:h-40">
-          <p className="text-orange-500 font-bold text-lg lg:text-2xl">
-            QUALITY
-          </p>
-          <p className="text-gray-400 text-sm lg:text-base">A++</p>
-        </div>
-
-        {/* LOW PRICE */}
-        <div className="flex flex-col items-center justify-center border border-gray-600 rounded-full w-32 h-32 lg:w-40 lg:h-40">
-          <p className="text-orange-500 font-bold text-lg lg:text-2xl">
-            LOW PRICE
-          </p>
-          <p className="text-gray-400 text-sm lg:text-base">1/2</p>
-        </div>
-
-        {/* HIGH TECH */}
-        <div className="flex flex-col items-center justify-center border border-gray-600 rounded-full w-32 h-32 lg:w-40 lg:h-40">
-          <p className="text-orange-500 font-bold text-lg lg:text-2xl">
-            HIGH TECH
-          </p>
-          <p className="text-gray-400 text-sm lg:text-base">Gen AI</p>
-        </div>
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-8 mb-12">
+        {[
+          { title: "FAST", subtitle: "X2" },
+          { title: "QUALITY", subtitle: "A++" },
+          { title: "LOW PRICE", subtitle: "1/2" },
+          { title: "HIGH TECH", subtitle: "Gen AI" },
+        ].map((item) => (
+          <div
+            key={item.title}
+            className="flex items-center justify-center rounded-full p-1 bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]"
+          >
+            <div className="flex flex-col items-center justify-center bg-black rounded-full w-32 h-32 lg:w-40 lg:h-40">
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] font-bold text-lg lg:text-2xl">
+                {item.title}
+              </p>
+              <p className="text-gray-400 text-sm lg:text-base">
+                {item.subtitle}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Description */}
@@ -63,12 +59,6 @@ const VideoSection = () => {
 
       {/* Divider */}
       <div className="my-16 border-t border-gray-600"></div>
-
-      {/* Previous Works Section */}
-      {/* <div className="text-center">
-        <p className="text-orange-500 font-bold text-lg">•</p>
-        <h3 className="text-3xl lg:text-4xl font-bold">PREVIOUS WORKS</h3>
-      </div> */}
     </section>
   );
 };
