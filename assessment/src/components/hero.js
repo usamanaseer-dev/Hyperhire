@@ -16,11 +16,11 @@ const HeroSection = () => {
               <div className="flex items-center justify-center bg-orange-500 rounded-full w-10 h-10 md:w-12 md:h-12">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-28 w-28  text-white"
+                  className="h-30 w-30  text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
+                  strokeWidth={3}
                 >
                   <path
                     strokeLinecap="round"
@@ -37,7 +37,7 @@ const HeroSection = () => {
       {/* Floating button with down-tick icon */}
       <a
         href="#"
-        className="absolute top-1/3 right-12 lg:right-20 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold text-sm md:text-base shadow-lg"
+        className="absolute top-1/3 right-12 lg:right-20 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold text-sm md:text-base shadow-lg hidden md:block"
       >
         <div className="flex flex-col items-center">
           <span className="mt-1">
